@@ -1,0 +1,468 @@
+/*  Vancouver Island Web Design
+	viwebdesign.ca
+	============================
+	Kyle Boyd
+	Abdulrahman Aziz
+	Elliot Wyman
+	============================
+*/
+
+/* <------------------- Start Defaults --------------------------> */
+
+html,body,div,span,applet,object,iframe,,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
+
+:focus { outline:0; }
+a:active { outline:none; }
+a img{ 
+	border:none;
+}
+body { line-height:1; color:black; background:white; }
+ol,ul { list-style:none; }
+table { border-collapse:separate; border-spacing:0; }
+caption,th,td { text-align:left; font-weight:normal; }
+blockquote:before,blockquote:after,q:before,q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {  text-align: -moz-center; }
+body {
+	text-align:center;
+	width:100%;
+	font:Arial, Helvetica, sans-serif;
+}
+header, section, footer, aside, nav, article, hgroup{
+	display:block;
+}
+.clear {
+	clear:both;
+}
+
+
+/* <------------------- End of Defaults --------------------------> */
+
+/* <------------------- Start of big_wrapper --------------------------> */
+#big_wrapper{
+	width:960px;
+	text-align:center;
+	margin:20px auto;
+}
+/* <-------------------- End of big_wrapper -------------------> */
+
+/* <-------------------- Start top_header --------------------------> */
+#top_header{
+	
+}
+#phone_animation{
+	float:right;
+	
+}
+#phone_number {
+	float:right;	
+}
+
+#main_logo{
+	text-align:left;
+}
+#url {
+	float:right;
+	font-weight:bold;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+#phone_animation_alternative {
+	margin-top:75px;
+	margin-right:50px;
+}
+#header_multi_logo{
+	float:right;
+	margin-right:100px;
+}
+/* <------------------- End of top_header --------------------------> */
+
+
+
+/* <-------------------- Start top_menu --------------------------> */
+#top_menu{
+	background:url(img/back_nav.jpg) #1791d1;
+	color:white;
+	border-radius:15px; /* Rounder Border */
+	-moz-border-radius: 15px; /* Rounder Border */
+/*	-moz-box-shadow:    inset 0 0 10px #000000; /* Shadow */
+   /* -webkit-box-shadow: inset 0 0 10px #000000; /* Shadow */
+ /*   box-shadow:         inset 0 0 10px #000000; /* Shadow */
+	font:20px Arial, Helvetica, sans-serif;
+}
+#top_menu li {
+	display:inline-block;
+	list-style:none;
+	margin: 0px 0 0px 0;
+	padding:10px;
+	text-decoration:none;
+}
+#top_menu li a:link , #top_menu li a:hover, #top_menu li a:visited, #top_menu a:active{ /* Unvisited */
+	color:white;	
+	text-decoration:none;
+}
+#top_menu li:hover{ /* Hover */
+	background:url(img/back_nav_hov.jpg) #4A94EC;
+	/* -moz-box-shadow: inset 0 0 5px #000000; /* Shadow */
+    /* -webkit-box-shadow: inset 0 0 5px #000000; /* Shadow */
+    /* box-shadow: inset 0 0 5px #000000; /* Shadow */
+	text-decoration:none;
+}
+/* <------------------- End of top_menu --------------------------> */
+
+/* <-------------------- Start main_animation --------------------------> */
+
+#container {
+	width:960px;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+	padding-left:25px;
+}
+#example {
+	width:960px;  /* it was 940 */
+	height:450px;  /* it was 350 */
+	position:relative;
+}
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:960px; /* it was 940 */
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+/*
+	Slideshow
+*/
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+.slides_container {
+	width:900px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+	width:940px;
+	height:400px;
+	display:block;
+}
+
+.slides_container a img {
+	display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:180px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:915px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style-image:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+
+/* <-------------------- End of main_animation --------------------------> */
+#main_animation { margin-top:10px;margin-bottom:10px; }
+/* <-------------------- Start main_section --------------------------> */
+#main_section{
+	text-align:left;
+}
+
+
+#main_section h1{
+	font:25px Arial, Helvetica, sans-serif;
+	color:#1791d1;
+	font-weight:bold;
+}
+ 
+#main_section h2{
+	font:20px Arial, Helvetica, sans-serif;
+	color:#1791d1;
+	font-weight:bold;
+}
+#main_section h3{
+	font:16px Arial, Helvetica, sans-serif;
+	color:#1791d1;
+	font-weight:bold;
+}
+#main_section ul{
+	list-style:square;
+	margin:20px;
+	line-height:30px;
+	font:Arial, Helvetica, sans-serif;
+	
+}
+
+#main_section p{
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:200%;
+}
+#left_section {
+	float:left;
+	width:450px;
+	
+}
+#right_section {
+	width:450px;
+	float:right;
+}
+#bottom_section {
+	text-align:left;
+	margin-top:10px;
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:200%;
+}
+#left_section span {
+	text-decoration:underline;
+}
+
+/* <-------------------- End of main_section --------------------------> */
+
+/* <-------------------- Start main_footer --------------------------> */
+#main_footer{
+	border-top:3px solid black;
+	margin-top:20px;
+	padding-top:10px;
+}
+#main_footer p {
+	text-align:left;
+	font:12px Arial, Helvetica, sans-serif;	
+	float:left;
+}
+#footer_sitemap {
+	text-align:right;
+	float:right;
+}
+/* <-------------------- End of main_footer --------------------------> */
+
+
+/* <-------------------- Start of Home --------------------------> */
+
+
+#LH { 
+	float:right;
+	margin: 5px 0 0 10px;
+}
+
+#boxes {
+	margin-top:10px;
+}
+#box1,#box2 {
+	float:left;
+	width:300px;
+	height:100px;
+	margin-right:30px;
+	text-align:left;
+	border-radius:15px; /* Rounder Border */
+	-moz-border-radius: 15px; /* Rounder Border */
+	/* background-color:#DDE4E6; */
+}
+#box3 {
+	float:right;
+	width:300px;
+	height:100px;
+	text-align:left;
+	border-radius:15px; /* Rounder Border */
+	-moz-border-radius: 15px; /* Rounder Border */
+	/* background-color:#DDE4E6; */
+}
+#boxes img {
+	padding: 10px 0 0 15px;
+}
+.box_title {
+
+	float:right;
+	padding:50px 70px 0 0;
+}
+/* <-------------------- End of Home --------------------------> */
+
+/* <-------------------- Start of Advertise --------------------------> */
+
+/*<-------------------- End of Advertise --------------------------> */
+/* <-------------------- Start of Login --------------------------> */
+
+
+input, textarea {
+	width:60%px;
+	background-color:#DDE4E6;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:0px solid black;
+	padding:5px;
+	margin-top:5px;
+	font-size:0.7em;
+}
+
+label {
+	display:block;	
+	margin-top:5px;
+	font: 15px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid gray;
+}
+textarea {
+	width:400px;
+	height:183px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#DDE4E6;
+}
+#submit {
+	width:100px;
+	height:38px;
+	border:none;
+	margin-top:20px; 
+	cursor:pointer;
+	display:block;
+	font: 14px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	
+	/* background:url(img/back_nav.jpg) #1791d1; */
+}
+#submit:hover {
+	opacity:0.9;
+	border: 1px solid gray;
+}
+#contact {
+	margin-top:375px;	
+}
+#contact p {
+	font-weight:bold;
+	font-size:16px;	
+}
+#facebook {
+	float:left;
+	margin-top:13px;
+}
+#twitter {
+	float:left;
+}
+/* <-------------------- End of Login --------------------------> */
+
+/* <-------------------- Software  --------------------------> */
+#software {
+	text-align: center;
+
+}
+
+#air_studio {
+	float:left;
+	width:33%;
+	margin:20px;
+
+}
+#air_player {
+	float:left;
+	width:33%;
+	margin:20px;
+
+}
+#web_studio {
+	float:left;
+	width:33%;
+	margin:20px;
+		
+
+}
+#web_studio_login {
+
+	/* text-align:left;
+	margin-top:10px; */
+	float:left;
+	width:33%;
+	margin:20px;
+
+}
+
+/* <-------------------- End of Software --------------------------> */
+
+/* <-------------------- Start of Contact --------------------------> */
+
+#contact_animation {
+	margin-top:10px;	
+}
+
+
+/* <-------------------- End of Contact --------------------------> */
+
+/* <-------------------- Start of Sitemap --------------------------> */
+#left_section li a:link , #left_section li a:hover, #left_section li a:visited, #left_section a:active {
+	color:blue;
+}
+/* <-------------------- Start of Why Us --------------------------> */
+#why_mag {
+	margin-bottom:15px;	
+}
+/* <-------------------- End of Why Us --------------------------> */
