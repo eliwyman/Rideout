@@ -1,2 +1,2 @@
-Rideout
+Rideout Communications
 =======
